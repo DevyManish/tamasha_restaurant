@@ -3,56 +3,122 @@ Author : Manish Gupta;
 Theme: Restaurant's Admin ; 
 */
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.wrapper{
-    padding: 1%;
-    width: 80%;
-    margin: 0 auto;   
-}  
-.text-center{
-    text-align: center;
-}
-.clearfix{
-    float: none;
-    clear: both;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+.wrapper {
+  padding: 1%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.tbl-full {
+  width: 100%;
+}
+.tbl-30{
+  width: 30%;
+}
+
+table tr th {
+  border-bottom: 1px solid black;
+  padding: 1%;
+  text-align: left;
+
+}
+
+table tr td {
+  padding: 1%;
+}
+
+/* add admin */
+.btn-primary {
+  background-color: #1e90ff;
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #3742fa;
+}
+
+/*  update admin */
+.btn-secondary {
+  background-color: #7bed9f;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background-color: #2ed573;
+}
+
+/* delete admin */
+.btn-danger {
+  background-color: #ff6b81;
+  padding: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #ff4757;
+}
+
+
 /*CSS for menu*/
-.menu{
-    border-bottom: 1px solid grey;
-    text-align: center;
+.menu {
+  border-bottom: 1px solid grey;
+  text-align: center;
 }
-.menu ul{
-    list-style-type: none;
+
+.menu ul {
+  list-style-type: none;
 }
-.menu ul li{
-    display: inline;
-    padding: 1%;
+
+.menu ul li {
+  display: inline;
+  padding: 1%;
 }
-.menu ul li a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #2f3542;
+
+.menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2f3542;
 }
-.menu ul li a:hover{
-    color: #a4b0be;
+
+.menu ul li a:hover {
+  color: #a4b0be;
 }
 
 /*CSS for Main Content*/
-.main-content{
-    background-color: #ffa502;
-    padding: 3% 0;
+.main-content {
+  background-color: #ffa502;
+  padding: 3% 0;
 }
-.col-4{
-    width: 18%;
-    background-color:#eccc68;
-    margin: 1%;
-    padding: 2%;
-    float: left;
+
+.col-4 {
+  width: 18%;
+  background-color: #eccc68;
+  margin: 1%;
+  padding: 2%;
+  float: left;
 }
 
 /*#ffa502*/
@@ -89,8 +155,8 @@ Theme: Restaurant's Admin ;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer_section .footer_contact .contact_link_box a {
@@ -119,8 +185,8 @@ Theme: Restaurant's Admin ;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -130,11 +196,11 @@ Theme: Restaurant's Admin ;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #222831;
   width: 30px;
   height: 30px;
@@ -162,13 +228,3 @@ Theme: Restaurant's Admin ;
 .footer_section .footer-info p a {
   color: inherit;
 }
-
-
-
-
-
-
-
-
-
-
