@@ -38,8 +38,20 @@
 if (isset($_POST['submit'])) {
     $name = $_POST['full_name'];
     $username = $_POST['username'];
-    $password = $_POST['password'];
-}
+    $password = md5($_POST['password']); //password encryption with md5
 
+    $sql = "INSERT INTO tbl_admin set
+        full_name = '$name',
+        username = '$username',
+        password = '$password'
+        ";
+    // echo $sql;
+    // execute query and save data in data base
+   $conn = mysqli_connect('localhost', 'root','') or die(mysqli_error());
+    $db_select = mysqli_select_db($conn, 'food-order') or die(mysqli_error());
+    $res = mysqli_query($conn, $sql) or die(mysqli_error());
+
+    
+}
 
 ?>
