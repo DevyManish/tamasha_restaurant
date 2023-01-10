@@ -33,6 +33,7 @@
 <?php include('partials/footer.php'); ?>
 
 <?php
+
 // process the value from form & save it in database
 // check whether the submit button is clicked or not
 if (isset($_POST['submit'])) {
@@ -40,17 +41,25 @@ if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = md5($_POST['password']); //password encryption with md5
 
-    $sql = "INSERT INTO tbl_admin set
-        full_name = '$name',
-        username = '$username',
-        password = '$password'
-        ";
+    $sql = "INSERT INTO tbl_admin SET
+                full_name = '$name',
+                username = '$username',
+                password = '$password'
+                ";
+    
     // echo $sql;
     // execute query and save data in data base
-   $conn = mysqli_connect('localhost', 'root','') or die(mysqli_error());
-    $db_select = mysqli_select_db($conn, 'food-order') or die(mysqli_error());
-    $res = mysqli_query($conn, $sql) or die(mysqli_error());
+    $conn = mysqli_connect($server, $username, $password) or die(mysqli_connect_error());  //database connection
+$db_select = mysqli_select_db($conn, $dbname) or die(mysqli_connect_error());//selecting database
+  
+    // $res = mysqli_query($conn, $sql) or die(mysqli_connect_error());
+// if($res == true){
+//         echo "data inserted";
 
+// }
+// else{
+//         echo "error";
+// }
     
 }
 

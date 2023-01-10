@@ -1,3 +1,7 @@
+<?php 
+// include('../config/constrants.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
