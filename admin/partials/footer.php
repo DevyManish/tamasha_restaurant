@@ -38,9 +38,9 @@
               Tamasha
             </a>
             <p>
-            Tamasha, located in Naihati, serves cuisine inspired by the rugged Northwest frontier. Chef JP Singh cooks hearty, meat-heavy fare that’s eaten by hand with flaky paratha bread. Within its dark, rustic dining room, food lovers will experience a uniquely Indian version of fine dining.
+            Tamasha, located in Naihati, serves cuisine inspired by the rugged Northwest frontier. 
             </p>
-            <div class="footer_social">
+            <!-- <div class="footer_social">
               <a href="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
@@ -58,8 +58,8 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 footer-col">
+        </div> -->
+        <!-- <div class="col-md-4 footer-col">
           <h4>
             Opening Hours
           </h4>
@@ -69,14 +69,12 @@
           <p>
             10.00 Am -10.00 Pm
           </p>
-        </div>
+        </div> -->
       </div>
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          <a href="https://www.instagram.com/l_m_manish/">Manish Gupta</a><br><br>
         </p>
       </div>
     </div>
