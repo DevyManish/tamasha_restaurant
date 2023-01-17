@@ -1,5 +1,5 @@
 <?php 
-// include('../config/constrants.php');
+include('../config/constrants.php');
 ?>
 
 <!DOCTYPE html>
