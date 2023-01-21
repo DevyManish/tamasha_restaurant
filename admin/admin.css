@@ -234,3 +234,14 @@ table tr td {
 .footer_section .footer-info p a {
   color: inherit;
 }
+/* css for login */
+
+/* .full-screen{
+  background-image: url(../images/background.jpg);
+} */
+.login{
+  border: 1px solid grey;
+width: 20%;
+margin:5% auto;
+padding: 5%;
+}
