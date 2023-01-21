@@ -24,7 +24,7 @@
             // echo "Admin Available";
             $row=mysqli_fetch_assoc($res);
 
-            $full_name = $row['fullname'];
+            $full_name = $row['full_name'];
             $username = $row['username'];
         }
         else{
@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="hidden" name="id" value="<?phpecho $id ?>">
+                        <input type="hidden" name="id" value="<?php echo $id ?>">
                         <input type="submit" name="submit" value="Update Admin" class="btn-secondary">
                     </td>
                 </tr>
@@ -74,12 +74,12 @@
             //echo "Button Clicked";
             //get all the cvalues from form to update
             $id = $_POST['id'];
-            $full_name = $_POST['fullname'];
+            $full_name = $_POST['full_name'];
             $username = $_POST['username'];
 
             //create sql query to update query
             $sql = "UPDATE tbl_admin SET
-            fullname = '$full_name',
+            full_name = '$full_name',
             username = '$username' 
             WHERE id = '$id'
             ";

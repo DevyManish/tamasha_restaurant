@@ -5,11 +5,11 @@
 <div class="main-content">
     <div class="wrapper">
         <h1>MANAGE ADMIN</h1>
-        
-       
 
-            <!-- //check whether mssg is displayed -->
-            <?php
+
+
+        <!-- //check whether mssg is displayed -->
+        <?php
             if(isset($_SESSION['add']))
             {
                 echo $_SESSION['add'];//displaying session message
@@ -25,8 +25,24 @@
                 echo $_SESSION['update'];//displaying session message
                 unset($_SESSION['update']);//removing session message
             }
+            if(isset($_SESSION['user-not-found']))
+            {
+                echo $_SESSION['user-not-found'];//displaying session message
+                unset($_SESSION['user-not-found']);//removing session message
+            }
+            if(isset($_SESSION['pwd-not-match']))
+            {
+                echo $_SESSION['pwd-not-match'];//displaying session message
+                unset($_SESSION['pwd-not-match']);//removing session message
+            }
+            if(isset($_SESSION['change-pwd']))
+            {
+                echo $_SESSION['change-pwd'];//displaying session message
+                unset($_SESSION['change-pwd']);//removing session message
+            }
+
             ?>
-            <br><br>
+        <br><br>
 
         <!-- botton to add admin -->
         <a href="add-admin.php" class="btn-primary">Add Admin</a>
@@ -66,21 +82,25 @@
 
                         //get indiviual data
                         $id=$rows['id'];
-                        $fullname=$rows['fullname'];
+                        $full_name=$rows['full_name'];
                         $username=$rows['username'];
 
                         //Display the values in our table
                         ?>
-                        <tr>
-                            <td><?php echo $sn++   ; ?></td>
-                            <td><?php echo $fullname; ?></td>
-                            <td><?php echo $username; ?></td>
-                            <td>
-                                <a href="<?php echo SITEURL;?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
-                                <a href="<?php echo SITEURL;?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">delete Admin</a>
-                            </td>
-                        </tr>
-                        <?php
+            <tr>
+                <td><?php echo $sn++   ; ?></td>
+                <td><?php echo $full_name; ?></td>
+                <td><?php echo $username; ?></td>
+                <td>
+                    <a href="<?php echo SITEURL;?>admin/update-password.php?id=<?php echo $id; ?>"
+                        class="btn-primary">Change Password</a>
+                    <a href="<?php echo SITEURL;?>admin/update-admin.php?id=<?php echo $id; ?>"
+                        class="btn-secondary">Update Admin</a>
+                    <a href="<?php echo SITEURL;?>admin/delete-admin.php?id=<?php echo $id; ?>"
+                        class="btn-danger">delete Admin</a>
+                </td>
+            </tr>
+            <?php
                     }
                 } 
                 else
@@ -93,7 +113,7 @@
 
 
 
-           
+
         </table>
 
 
