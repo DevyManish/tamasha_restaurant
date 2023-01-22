@@ -19,7 +19,7 @@ include('../config/constrants.php');
                 if (isset($_SESSION['login'])) { //checking whether session is set of that
                     echo $_SESSION['login']; //displaying session message if set
                     unset($_SESSION['login']); //removinging session message
-                
+                    
                 }
                 if (isset($_SESSION['no-login-messege'])) { //checking whether session is set of that
                     echo $_SESSION['no-login-messege']; //displaying session message if set

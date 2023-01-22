@@ -106,9 +106,5 @@ if (isset($_POST['submit'])) {
 
     // 4. change password if all above is true
 }
-
-
-
-
 ?>
 <?php include('partials/footer.php'); ?>

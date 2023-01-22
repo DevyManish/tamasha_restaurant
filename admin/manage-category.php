@@ -3,12 +3,21 @@
 
     <div class="main-content">
         <div class="wrapper">
-            <h1>Manage Categories</h1>
-            <br />
+            <h1>MANAGE CATEGORY</h1>
+            <br>
+            <br>
+        <?php
+        if(isset($_SESSION['add']))
+        {
+            echo $_SESSION['add'];//displaying session message
+            unset($_SESSION['add']);//removing session message
+        }
+        ?>
+           <br />
         <br />
-        <br />
+
         <!-- botton to add admin -->
-        <a href="add-admin.php" class="btn-primary">Add Category</a>
+        <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Add Category</a>
         <br />
         <br />
         <br />
