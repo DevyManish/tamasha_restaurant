@@ -12,6 +12,10 @@ include('partials/menu.php');
                 echo $_SESSION['add']; //displaying session message
                 unset($_SESSION['add']); //removing session message
             }
+            if (isset($_SESSION['upload'])) {
+                echo $_SESSION['upload']; //displaying session message
+                unset($_SESSION['upload']); //removing session message
+            }
 ?>
 
             <br>
@@ -116,7 +120,7 @@ active='$active'
         header('location:' . SITEURL . 'admin/manage-category.php');
     } else {
         // failed to add catagory
-        echo "failed";
+        // echo "failed";
         $_SESSION['add'] = "<div class='error'>Failed To Add Category</div>";
         // redirect to the manage category page
         header('location:' . SITEURL . 'admin/add-category.php');

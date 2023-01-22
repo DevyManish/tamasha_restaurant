@@ -10,7 +10,7 @@
               Contact Us
             </h4>
             <div class="contact_link_box">
-              <a href="https://goo.gl/maps/LjswcL94Nd7nmVRq5">
+              <a href="https://goo.gl/maps/LjswcL94Nd7nmVRq5" >
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
                   Location
