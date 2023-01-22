@@ -1,19 +1,18 @@
 <?php include('partials/menu.php'); ?>
 
 
-    <div class="main-content">
-        <div class="wrapper">
-            <h1>MANAGE CATEGORY</h1>
-            <br>
-            <br>
+<div class="main-content">
+    <div class="wrapper">
+        <h1>MANAGE CATEGORY</h1>
+        <br>
+        <br>
         <?php
-        if(isset($_SESSION['add']))
-        {
-            echo $_SESSION['add'];//displaying session message
-            unset($_SESSION['add']);//removing session message
+        if (isset($_SESSION['add'])) {
+            echo $_SESSION['add']; //displaying session message
+            unset($_SESSION['add']); //removing session message
         }
         ?>
-           <br />
+        <br />
         <br />
 
         <!-- botton to add admin -->
@@ -60,8 +59,8 @@
                 </td>
             </tr>
         </table>
-        </div>
     </div>
+</div>
 
 
 
