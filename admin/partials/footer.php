@@ -10,7 +10,7 @@
               Contact Us
             </h4>
             <div class="contact_link_box">
-              <a href="https://goo.gl/maps/LjswcL94Nd7nmVRq5" >
+              <a href="https://goo.gl/maps/LjswcL94Nd7nmVRq5" target="_blank">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
                   Location
@@ -22,7 +22,7 @@
                   Call +91 8910307859
                 </span>
               </a>
-              <a href="">
+              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=manishguptacpn@gmail.com" target="_blank">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                 manishguptacpn@gmail.com
@@ -73,7 +73,7 @@
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://www.instagram.com/l_m_manish/">Manish Gupta</a><br><br>
+          <a href="https://www.instagram.com/l_m_manish/" target="_blank">Manish Gupta</a><br><br>
           <!-- &copy; <span id="displayYear"></span> Distributed By
           <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> -->
         </p>
