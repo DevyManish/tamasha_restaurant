@@ -64,7 +64,7 @@ include('partials/menu.php');
             <?php
 
 // check whether the submit button clicked or not
-if (isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     // echo "clicked";
 
     // 1.get the value from form
@@ -81,27 +81,35 @@ if (isset($_POST['submit'])){
         $active = "No";
     }
     if (isset($_FILES['image']['name'])) {
-                    $image_name = $_FILES['image']['name'];
-                    // if ($image_name="") {
-                    //     $ext = end(explode('.',$image_name));
-                    //     $image_name = "Food_Category_" . rand(0000, 9999) . "." . $ext;
+        // to upload image we need image name,source path,destination path
 
-                        $src = $_FILES['image']['tmp_name'];
-                        $dst = "../images/category" . $image_name;
+        $image_name = $_FILES['image']['name'];
+        // auto rename our image
+        // get the extension of the image(.jpg,.png,.gif etc) ex. "biriyani.jpg"
 
-                        $upload = move_uploaded_file($src, $dst);
-                        if ($upload == false) {
-                            $_SESSION['upload'] = "<div class='error'>Failed To Upload Image</div>";
-                                                // redirect to the manage category page
-                                                header('location:' . SITEURL . 'admin/add-category.php');
-                                                die();
-                        }
-                    }
-    // }
-    else{
-                    $image_name = "";
+        $ext = end(explode('.', $image_name));
+
+        // rename the image
+
+        $image_name = "food_category_" . rand(000, 999) . '.' . $ext;
+
+        $src = $_FILES['image']['tmp_name'];
+        $dst = "../images/category/" . $image_name; //"food_category_836.jpg"
+
+        $upload = move_uploaded_file($src, $dst);
+
+        if ($upload == false) {
+            $_SESSION['upload'] = "<div class='error'>Failed To Upload Image</div>";
+            // redirect to the manage category page
+            header('location:' . SITEURL . 'admin/add-category.php');
+            die();
+        }
     }
-    
+    // }
+    else {
+        $image_name = "";
+    }
+
     // create sql query and insert data into database
     $sql = "INSERT INTO tbl_category SET
 title = '$title',
@@ -110,8 +118,6 @@ featured='$featured',
 active='$active'
 ";
     $res = mysqli_query($conn, $sql);
-
-
 
     // 4.Check whether the (query is executed) data is added or not
     if ($res == true) {

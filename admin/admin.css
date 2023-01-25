@@ -27,7 +27,8 @@ Theme: Restaurant's Admin ;
 .tbl-full {
   width: 100%;
 }
-.tbl-30{
+
+.tbl-30 {
   width: 30%;
 }
 
@@ -80,11 +81,13 @@ table tr td {
 .btn-danger:hover {
   background-color: #ff4757;
 }
+
 .success {
-  color: #3742fa;
+  color: #521aee;
 }
+
 .error {
-  color:#ff4757
+  color: #ff4757
 }
 
 
@@ -234,14 +237,16 @@ table tr td {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
 /* css for login */
 
-/* .full-screen{
-  background-image: url(../images/background.jpg);
+/* .full{
+  background-image: url('../images/pexels-rajesh-tp-1624487.jpg');
+
 } */
-.login{
+.login {
   border: 1px solid grey;
-width: 20%;
-margin:5% auto;
-padding: 5%;
+  width: 20%;
+  margin: 5% auto;
+  padding: 5%;
 }

@@ -12,6 +12,7 @@ include('../config/constrants.php');
 </head>
 
 <body>
+    <div class="full">
             <div class="login">
                 <h1 class="text-center">ADMIN LOGIN</h1>
                 <br><br>
@@ -46,6 +47,7 @@ include('../config/constrants.php');
             </div>
         </div>
     </div>
+    </div>
 </body>
 
 </html>
@@ -69,7 +71,7 @@ if (isset($_POST['submit'])) {
 
     if ($count == 1) {
         // user available and login success
-        $_SESSION['login'] = "<div class='success'>Login uccessfully👌!!!</div>";
+        $_SESSION['login'] = "<div class='success'>Login Successfully👌!!!</div>";
         $_SESSION['user'] = $username; //to check whether the user is logged in or not & logout will onset it
 
         // redirect to home page
@@ -85,4 +87,6 @@ if (isset($_POST['submit'])) {
 
 }
 ?>
-<?php include('partials/footer.php'); ?>
+<?php
+//  include('partials/footer.php');
+  ?>
