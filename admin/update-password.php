@@ -14,21 +14,21 @@
                 <tr>
                     <td>Old Password</td>
                     <td>
-                        <input type="password" name="current_password" placeholder="current password" />
+                        <input type="password" name="current_password" placeholder="current password" required />
                     </td>
                 </tr>
 
                 <tr>
                     <td>Old Password</td>
                     <td>
-                        <input type="password" name="new_password" placeholder="new password" />
+                        <input type="password" name="new_password" placeholder="new password" required/>
                     </td>
                 </tr>
 
                 <tr>
                     <td>Confirm Password</td>
                     <td>
-                        <input type="password" name="confirm__password" placeholder="confirm password" />
+                        <input type="password" name="confirm__password" placeholder="confirm password" required/>
                     </td>
                 </tr>
 
