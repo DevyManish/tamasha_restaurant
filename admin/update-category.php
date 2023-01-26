@@ -178,7 +178,7 @@ if ($current_image!="") {
       }
 
       // 3.update the database
-      $sql2 = "UPDATE tbl_category SET 
+      $sql3 = "UPDATE tbl_category SET 
     title = '$title',
     image_name = '$image_name',
     featured = '$featured',

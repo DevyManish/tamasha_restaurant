@@ -17,6 +17,14 @@
             echo $_SESSION['upload']; //displaying session message
             unset($_SESSION['upload']); //removing session message
         }
+        if (isset($_SESSION['update'])) {
+            echo $_SESSION['update']; //displaying session message
+            unset($_SESSION['update']); //removing session message
+        }
+        if (isset($_SESSION['failed-remove'])) {
+            echo $_SESSION['failed-remove']; //displaying session message
+            unset($_SESSION['failed-remove']); //removing session message
+        }
         ?>
          <br>
          <br>
@@ -33,7 +41,7 @@
                 <th>Image</th>
                 <th>Featured</th>
                 <th>active</th>
-                <th>action</th>
+                <th>actions</th>
             </tr>
             <!-- create a query to get all the food -->
             <?php
@@ -51,12 +59,13 @@
             if ($count > 0) {
                 // we have food in database
                 // get food from database and display
-                while ($row = mysqli_fetch_array($res)) {
+                while ($row = mysqli_fetch_assoc($res)) {
                     // get the values from individual coloumn
                     $id = $row['id'];
                     $title = $row['title'];
                     $price = $row['price'];
                     $image_name = $row['image_name'];
+                    $featured = $row['featured'];
                     $active = $row['active'];
                     ?>
                     <tr>
@@ -93,7 +102,7 @@
                             <?php echo $active ?>
                         </td>
                         <td>
-                            <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update Food</a>
+                            <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update Food</a>
                             <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?> " class="btn-danger">delete Food</a>
                         </td>
                     </tr>
