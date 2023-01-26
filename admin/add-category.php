@@ -84,29 +84,30 @@ if (isset($_POST['submit'])) {
         // to upload image we need image name,source path,destination path
 
         $image_name = $_FILES['image']['name'];
-        // auto rename our image
-        // get the extension of the image(.jpg,.png,.gif etc) ex. "biriyani.jpg"
+        // upload image only if image is selected
+        if ($image_name !="") {
+            // auto rename our image
+            // get the extension of the image(.jpg,.png,.gif etc) ex. "biriyani.jpg"
 
-        $ext = end(explode('.', $image_name));
+            $ext = end(explode('.', $image_name));
 
-        // rename the image
+            // rename the image
 
-        $image_name = "food_category_" . rand(000, 999) . '.' . $ext;
+            $image_name = "food_category_" . rand(000, 999) . '.' . $ext;
 
-        $src = $_FILES['image']['tmp_name'];
-        $dst = "../images/category/" . $image_name; //"food_category_836.jpg"
+            $src = $_FILES['image']['tmp_name'];
+            $dst = "../images/category/" . $image_name; //"food_category_836.jpg"
 
-        $upload = move_uploaded_file($src, $dst);
+            $upload = move_uploaded_file($src, $dst);
 
-        if ($upload == false) {
-            $_SESSION['upload'] = "<div class='error'>Failed To Upload Image</div>";
-            // redirect to the manage category page
-            header('location:' . SITEURL . 'admin/add-category.php');
-            die();
+            if ($upload == false) {
+                $_SESSION['upload'] = "<div class='error'>Failed To Upload Image</div>";
+                // redirect to the manage category page
+                header('location:' . SITEURL . 'admin/add-category.php');
+                die();
+            }
         }
-    }
-    // }
-    else {
+    } else {
         $image_name = "";
     }
 
@@ -123,7 +124,7 @@ active='$active'
     if ($res == true) {
         // echo "success";
         // query executed and catagory added
-        $_SESSION['add'] = "<div class='success'>Category Added SuccessFully</div>";
+        $_SESSION['add'] = "<div class='success'><h2>Category Added SuccessFully</h2></div>";
         // redirect to the manage category page
         header('location:' . SITEURL . 'admin/manage-category.php');
     } else {
