@@ -3,8 +3,6 @@
     //Starat Session
     session_start();
 
-
-
     //Create constrants to store non repeating values
     define('SITEURL','http://localhost/tamasha_restaurant/');
     // Pratyush Database
