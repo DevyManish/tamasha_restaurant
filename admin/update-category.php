@@ -53,7 +53,7 @@ if (isset($_GET['id'])) {
                         </td>
                     </tr>
                     <tr>
-                        <td>Select Image: </td>
+                        <td>Current Image: </td>
                         <td>
                             <!-- Image will be displayed here -->
                             <?php
