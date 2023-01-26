@@ -46,9 +46,9 @@
 
         <!-- botton to add admin -->
         <a href="add-admin.php" class="btn-primary">Add Admin</a>
-        <br />
-        <br />
-        <br />
+        <br>
+        <br>
+        <br>
         <table class="tbl-full">
             <tr>
                 <th>S.N</th>

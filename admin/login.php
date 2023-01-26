@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
 
     if ($count == 1) {
         // user available and login success
-        $_SESSION['login'] = "<div class='success'>Login Successfully👌!!!</div>";
+        $_SESSION['login'] = "<div class='success'><h2>Login Successfully👌!!!</h2></div>";
         $_SESSION['user'] = $username; //to check whether the user is logged in or not & logout will onset it
 
         // redirect to home page
