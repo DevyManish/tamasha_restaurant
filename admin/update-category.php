@@ -170,9 +170,7 @@ if ($current_image!="") {
                     die(); //stop the process
                 }
             }
-          } else {
-              $image_name = $current_image;
-          }
+          } 
       } else {
           $image_name = $current_image;
       }
