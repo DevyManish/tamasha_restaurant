@@ -11,6 +11,7 @@ include('login-check.php');
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamasha</title>
+  <link href="../css/font-awesome.min.css" rel=	mutton biriyani	300.00	￼	Yes	Yes	Update Food delete Food"stylesheet" />
     <link rel="stylesheet" href="admin.css" >
 </head>
 <body>
