@@ -13,13 +13,13 @@
           <div class="form_container">
             <form action="">
               <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input type="text" class="form-control" placeholder="Your Name" id="name"/>
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
+                <input type="text" class="form-control" placeholder="Phone Number" id="phone" />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
+                <input type="email" class="form-control" placeholder="Your Email" id="email" />
               </div>
               <div>
                 <select class="form-control nice-select wide">
@@ -60,11 +60,40 @@
     </div>
   </section>
   <!-- end book section -->
-  <div class="floating-parent">
-      <button class="talk"><i class="fas fa-microphone-alt"></i></button>
-        <!-- <img src="images/gif.gif" alt=""> -->
-        <h1 class="content"> Click here to speak</h1>
 
+  <!-- virtual assistant -->
+  <div class="floating-parent">
+    <button onmousedown="sound.play()" class="talk"><i class="fas fa-microphone-alt"></i></button>
+    <h1 class="content"> Click here to speak</h1>
   </div>
+
+  <!-- voice typing script -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'write name *tag': function(variable){
+      let name=document.getElementById("name");
+      name.value=variable;
+    },
+    'write phone *tag': function(variable){
+      let phone=document.getElementById("phone");
+      phone.value=variable.split(" ").join("");
+    },
+    'write email *tag': function(variable){
+      let email=document.getElementById("email");
+      email.value=variable;
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
+
 
   <?php include('partials-front/footer.php') ?>

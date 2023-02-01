@@ -1294,16 +1294,13 @@
       </div>
     </div>
   </section>
-
+  <!-- voice assistant -->
   <div class="floating-parent">
-      <button class="talk"><i class="fas fa-microphone-alt"></i></button>
-        <!-- <img src="images/gif.gif" alt=""> -->
-        <h1 class="content"> Click here to speak</h1>
-
+    <button onmousedown="sound.play()" class="talk"><i class="fas fa-microphone-alt"></i></button>
+    <!-- <img src="images/gif.gif" alt=""> -->
+    <h1 class="content"> Click here to speak</h1>
   </div>
-
-
 
   <!-- end client section -->
 
-<?php include('partials-front/footer.php');
+  <?php include('partials-front/footer.php');

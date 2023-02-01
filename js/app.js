@@ -56,22 +56,18 @@ function speakThis(message) {
 
     speech.text = "I did not understand what you said please try again";
 
-    if(message.includes('hey') || message.includes('hello')|| message.includes('hi')) {
-        const finalText = "Hello Boss I Am Tamasha";
+    if(message.includes('hi') || message.includes('namaskar')|| message.includes('hello')) {
+        const finalText = "yes sirr.myself tamasha.How can i help you";
         speech.text = finalText;
     }
 
-    else if(message.includes('how are you')) {
-        const finalText = "I am fine boss tell me what are u want to test today";
+    else if(message.includes('how are you') || message.includes('tamasha how are you')) {
+        const finalText = "I am fine. Sir tell me about your test today";
         speech.text = finalText;
     }
 
-    else if(message.includes('name')) {
-        const finalText = "My name is Tamasha";
-        speech.text = finalText;
-    }
-    else if(message.includes('tamasha who am i')) {
-        const finalText = "hi boss u are pratyush singha...u and mister manish gupta disigned me";
+    else if(message.includes('who are you')) {
+        const finalText = "Sir myself Tamasha,your personal voice assistant.designed by Pratyush Singha & Mr. Manish Gupta";
         speech.text = finalText;
     }
 
@@ -92,7 +88,7 @@ function speakThis(message) {
     }
     else if(message.includes('tamasha what is your location')) {
         window.open("https://goo.gl/maps/LjswcL94Nd7nmVRq5");
-        const finalText = "boss we are located at naihati.redirecting u to google";
+        const finalText = "boss we are located at naihati.redirecting you to google";
         speech.text = finalText;
     }
 
