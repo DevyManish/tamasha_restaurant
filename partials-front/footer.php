@@ -104,6 +104,11 @@
   <!-- End Google Map -->
   <!-- voice assistant -->
   <script src="js/app.js"></script>
+  <!-- for on click sound of virtual assistant -->
+  <script>
+    var sound= new Audio();
+    sound.src="sounds/onclick.mp3";
+  </script>
 
 
 </body>
