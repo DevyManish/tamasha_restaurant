@@ -1005,3 +1005,43 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* voice assistant */
+.floating-parent{
+  position: fixed;
+  bottom: 10%;
+  right: 18px;
+  text-align: center;
+
+}
+.floating-parent .talk{
+  width: 60px;
+  height: 60px;
+  background: url(../images/gif.gif);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  color: #00778b;
+  background-size: 60px;
+  background-position: center;
+  float: right;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 -2px 3px -3px #00778b;
+
+}
+.floating-parent .content{
+  position: relative;
+  right: 10px;
+  top: 10px;
+  white-space: nowrap;
+  border: 0px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 15px 10px 20px;
+  background-color: rgb(255,255,255);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow: rgb(0 18 46/24%) 0px 6px 32px 0px;
+}

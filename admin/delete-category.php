@@ -24,7 +24,7 @@ if ($image_name="") {
     // if failed to remove image then add an error messege and stop the process
         if ($remove==false) {
             // set the session messege 
-            $_SESSION['remove'] = "<div class='error'>Failed to Remove the Category Image!!</div>";
+            $_SESSION['remove'] = "<div class='error'><h2>Failed to Remove the Category Image!!</h2></div>";
             // redirect to manage-category page
             header('location:'.SITEURL.'admin/manage-category.php');
             // stop the process
@@ -43,14 +43,14 @@ if ($image_name="") {
     // check whther the data is deleted form database or not
     if ($res==true) {
         // set success messsge and redirect
-        $_SESSION['delete'] = "<div class='success'>Category Deleted Successfully</div>";
+        $_SESSION['delete'] = "<div class='success'><h2>Category Deleted Successfully</h2></div>";
         // redirect to manage-category
         header('location:'.SITEURL.'admin/manage-category.php');
 
     }
     else{
         // set error messege and redirect
-        $_SESSION['delete'] = "<div class='error'>Failed to Delete Category!!!</div>";
+        $_SESSION['delete'] = "<div class='error'><h2>Failed to Delete Category!!!</h2></div>";
         // redirect to manage-category
         header('location:'.SITEURL.'admin/manage-category.php');
     }

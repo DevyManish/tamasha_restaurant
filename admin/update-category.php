@@ -147,7 +147,7 @@ if ($current_image!="") {
               $upload = move_uploaded_file($src, $dst);
 
               if ($upload == false) {
-                  $_SESSION['upload'] = "<div class='error'>Failed To Upload Image</div>";
+                  $_SESSION['upload'] = "<div class='error'><h2>Failed To Upload Image</h2></div>";
                   // redirect to the manage category page
                   header('location:' . SITEURL . 'admin/manage-category.php');
                   die();
@@ -164,15 +164,13 @@ if ($current_image!="") {
             // if failed to remove...display the messge and stop the process
                 if ($remove == false) {
                     // failed to remove image
-                    $_SESSION['failed-remove'] = "<div class='error'>Failed To Remove Current Image</div>";
+                    $_SESSION['failed-remove'] = "<div class='error'><h2>Failed To Remove Current Image</h2></div>";
                     // redirect to the manage category page
                     header('location:' . SITEURL . 'admin/manage-category.php');
                     die(); //stop the process
                 }
             }
-          } else {
-              $image_name = $current_image;
-          }
+          } 
       } else {
           $image_name = $current_image;
       }
