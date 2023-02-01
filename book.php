@@ -60,5 +60,11 @@
     </div>
   </section>
   <!-- end book section -->
+  <div class="floating-parent">
+      <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+        <!-- <img src="images/gif.gif" alt=""> -->
+        <h1 class="content"> Click here to speak</h1>
+
+  </div>
 
   <?php include('partials-front/footer.php') ?>
