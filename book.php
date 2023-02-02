@@ -22,7 +22,7 @@
                 <input type="email" class="form-control" placeholder="Your Email" id="email" />
               </div>
               <div>
-                <select class="form-control nice-select wide">
+                <select class="form-control nice-select wide" id="select">
                   <option value="" disabled selected>
                     How many persons?
                   </option>
@@ -73,18 +73,21 @@
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'write name *tag': function(variable){
+    'name *tag': function(variable){
       let name=document.getElementById("name");
       name.value=variable;
     },
-    'write phone *tag': function(variable){
+
+    'phone *tag': function(variable){
       let phone=document.getElementById("phone");
-      phone.value=variable.split(" ").join("");
+      phone.value=variable;
     },
-    'write email *tag': function(variable){
+
+    'email *tag': function(variable){
       let email=document.getElementById("email");
-      email.value=variable;
-    }
+      email.value=variable.split(" ").join("");
+    },
+
   };
 
   // Add our commands to annyang
