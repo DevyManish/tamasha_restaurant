@@ -62,30 +62,42 @@ table tr td {
 } */
 
 /*  update admin */
-.btn-secondary {
-  background-color: #7bed9f;
+/* .btn-secondary { */
+  /* background-color: #7bed9f;
   padding: 1%;
   color: black;
   text-decoration: none;
   font-weight: bold;
-}
+} */
+.btn-secondary {
+  color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 10px; border-radius: 50px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(135deg, rgb(42, 164, 54) 0%, rgb(46, 203, 56) 50%, rgb(39, 117, 60) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 164, 62); display: inline-block;}
+  .btn-secondary:hover {
+  background: #2AA436; }
+  .btn-secondary:active {
+  background: #27753C; }
 
-.btn-secondary:hover {
+/* .btn-secondary:hover {
   background-color: #2ed573;
-}
+} */
 
 /* delete admin */
-.btn-danger {
+/* .btn-danger {
   background-color: #ff6b81;
   padding: 1%;
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
+} */
+.btn-danger {
+  color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 10px; border-radius: 50px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(164, 29, 29) 0%, rgb(203, 38, 38) 50%, rgb(117, 24, 24) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px rgb(164, 82, 28); display: inline-block;}
+  .btn-danger:hover {
+  background: #A41D1D; }
+  .btn-danger:active {
+  background: #751818; }
 
-.btn-danger:hover {
+/* .btn-danger:hover {
   background-color: #ff4757;
-}
+} */
 
 .success {
   color: #521aee;
