@@ -4,8 +4,10 @@ const content = document.querySelector('.content');
 function speak(sentence) {
     const text_speak = new SpeechSynthesisUtterance(sentence);
 
-    text_speak.rate = 1;
+    text_speak.volume = 1;
+    text_speak.rate = 0.9;
     text_speak.pitch = 1;
+    text_speak.voice = window.speechSynthesis.getVoices()[17];
 
     window.speechSynthesis.speak(text_speak);
 }
@@ -56,7 +58,7 @@ function speakThis(message) {
 
     speech.text = "I did not understand what you said please try again";
 
-    if(message.includes('hi') || message.includes('namaskar')|| message.includes('hello')) {
+    if(message.includes('hi') || message.includes('namaskar') || message.includes('are you there') || message.includes('hello')) {
         const finalText = "yes sirr.myself tamasha.How can i help you";
         speech.text = finalText;
     }
@@ -66,8 +68,8 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('who are you')) {
-        const finalText = "Sir myself Tamasha,your personal voice assistant.designed by Pratyush Singha & Mr. Manish Gupta";
+    else if(message.includes('tamasha Are You There')) {
+        const finalText = "At your service sirr";
         speech.text = finalText;
     }
 

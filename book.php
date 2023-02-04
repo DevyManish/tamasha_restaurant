@@ -41,7 +41,7 @@
                 </select>
               </div>
               <div>
-                <input type="date" class="form-control">
+                <input type="date" class="form-control" id="date">
               </div>
               <div class="btn_box">
                 <button>
@@ -86,8 +86,7 @@ if (annyang) {
     'email *tag': function(variable){
       let email=document.getElementById("email");
       email.value=variable.split(" ").join("");
-    },
-
+    }
   };
 
   // Add our commands to annyang
