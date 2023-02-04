@@ -13,7 +13,8 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <!-- logo -->
+  <link rel="shortcut icon" href="images/logo.png" type="">
 
   <title> Tamasha</title>
 
@@ -37,8 +38,10 @@
 
 </head>
 
-<body>
-
+<body onload="myFunction()">
+  <!-- preloader starts-->
+<div id="loading"></div>
+<!-- preloader ends -->
   <div class="hero_area">
     <div class="bg-box">
       <img src="images/chicken.jpg" alt="">

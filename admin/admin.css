@@ -45,16 +45,21 @@ table tr td {
 
 /* add admin */
 .btn-primary {
-  background-color: #1e90ff;
+  /* background-color: #1e90ff;
   padding: 1%;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-}
+  font-weight: bold; */
+    color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 10px; border-radius: 50px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(135deg, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 40%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 21px 15px 37px 0px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+    .btn-primary:hover {
+    background: #1C6EA4; }
+    .btn-primary:active {
+    background: #144E75; }
 
-.btn-primary:hover {
+
+/* .btn-primary:hover {
   background-color: #3742fa;
-}
+} */
 
 /*  update admin */
 .btn-secondary {
